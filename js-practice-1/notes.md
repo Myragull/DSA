@@ -99,6 +99,7 @@ Click on any question to reveal the answer. 🚀
   person.country = "USA";
 
   console.log("After update:", person);
+  // why the values changes even though we use constant so constant means that values are not reassigned but can be updated
   ```
 </details>
 
