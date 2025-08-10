@@ -46,7 +46,7 @@
 // console.log("a"+"b");
 // console.log(a +" b");
 // console.log(a + b);
-// the other operators will only do the srithmetic operatoins only
+// the other operators will only do the arithmetic operatoins only
 // console.log(10 -" 6")
 // console.log(10 - 6)
 // console.log(10 *" 6")
@@ -137,5 +137,176 @@
 
 
         //        some errors
-        let a= 10++ // operators on constants(or numbers) are not acceptable only acceptable on variables
+        // let a= 10++ // operators on constants(or numbers) are not acceptable only acceptable on variables
         // but  let a = true // operators on booleans are acceptabe only in js bcoz in terms of js true=1 and false=0 but in terms if java nd c++ not acceptable
+
+
+
+
+                                // Practice qs
+
+//                                 1.
+//  Correct Numeric Sum with Type Conversion You are given two variables, a and b, which can be either strings or numbers. Write a function that returns their numeric sum. You must ensure that "5" + 3 returns 8, and not "53". You may not use parseInt — use Number() or another safe conversion method.
+
+// function sum(a,b){
+//   return Number(a) +Number(b) ;
+// }
+
+// console.log(("10"+20));
+
+
+//                                       2.
+//  Understanding + Operator Precedence
+// In JavaScript, the + operator can perform both addition and string concatenation. Given two integers, write two console outputs:
+// One that concatenates the numbers to a string with "Value: " at the start.
+// One that first sums them, then concatenates to "Value: ".
+// Explain the difference in results.
+
+// let a =10;
+// let b=20;
+
+// console.log("value: "+a+b)
+// console.log("value: "+(a+b))
+
+
+//                                   3.
+//  Type Checking Before Sum
+// Write a function that takes two inputs, x and y. If both are numbers, return their sum. If not, print an error message:
+// "Invalid types: x is <type>, y is <type>"
+// where <type> is determined using typeof.
+
+// wrong
+// function sum(x,y){
+//         if(typeof(x) === Number && typeof(y) === Number){
+//                 return(x+y)
+//         }
+//         else{
+//                 console.log(`invalid types typeof x is ${typeof(x)} and typeof y is ${typeof(y)}`)
+//         }
+// }
+
+// sum(10,20)
+
+//right
+// function sum(x,y){
+//         if(typeof(x) === "number" && typeof(y) === "number"){
+//                 console.log(x+y)
+//         }
+//         else{
+//                 console.log(`invalid types typeof x is ${typeof(x)} and typeof y is ${typeof(y)}`)
+//         }
+// }
+
+// (sum("10",20))
+
+ 
+//                           4.
+//  Swap Variables in Three Ways
+// Given two numbers, a and b, write three different implementations to swap their values:
+// Using a third variable.
+// Without a third variable, using arithmetic.
+// Using JavaScript’s destructuring assignment.
+
+//  1
+// let a=10;
+// let b=5;
+// let c;
+// c=a;
+// a=b;
+// b=c;
+// console.log(a,b);
+
+// 2
+// let a=5;
+// let b=10;
+// [a,b]=[b,a];
+// console.log(a,b)
+
+//3
+// let a=10;
+// let b=20;
+// a= a+b // 30;
+// b=a-b;
+// a=a-b;
+// console.log(a,b)
+
+//                           5.
+//  Integer Division and Remainder
+// Write a function that takes two integers dividend and divisor and returns:
+// The integer division result (rounded down, using Math.floor)
+// The remainder (using %)
+// Example: 13, 2 → quotient: 6, remainder: 1
+
+// function division(dividend,divisor){
+//         console.log(`Quotient: ${Math.floor(dividend/divisor)}`)
+//         console.log(`Remainder: ${dividend%divisor}`)
+// }
+
+// division(3,13)
+
+//                       6.
+//  Loose vs. Strict Equality
+// Write a function that compares two values using both == and ===.
+// If they are strictly equal (===), return "strictly equal".
+// If they are loosely equal (==), return "equal".
+// Otherwise, return "not equal"
+// // 
+// function equality(a,b){
+//   if(a===b){
+//         console.log("Strictly equal")
+//   }
+//   else if (a==b){
+//         console.log("equal");
+//   }
+//   else{
+//         console.log("not equal")
+//   }
+// }
+
+// equality("10",10)
+
+
+// 7.
+//  Logical Operators AND / OR
+// Given three boolean expressions, cond1, cond2, and cond3, return two results:
+// true if all are true (&&).
+// true if at least one is true (||).
+// Print both results.
+
+// let cond1 = true;
+// let cond2 = false;
+// let cond3 = true;
+
+// console.log(cond1 && cond2 && cond3 )
+// console.log(cond1 || cond2 || cond3 )
+
+
+// 8. Pre- and Post-Increment Evaluation
+// Let a = 5. Evaluate the expressions a++ + ++a and ++a + a++. Return both results along with the final value of a after each operation. Be ready to explain the difference between pre-increment and post-increment.
+
+// let a = 5;
+// console.log(`a++ + ++a: ${a++ + ++a}`); // 11
+// a++: post-increment → use 5, then a becomes 6
+// ++a: pre-increment → first increment a (6 → 7), then use 7
+// So: 5 + 7 = 12
+
+// console.log(`++a + a++: ${++a + a++}`); // 12
+
+
+
+// 9. Invalid Increment Operation
+// Demonstrate what happens if you attempt to increment a number literal directly, e.g., 10++. Write a small program that catches the error and prints its message. Explain why JavaScript disallows this.
+
+
+// 10. Age Prompt Simulation
+// Simulate prompting a user for their age (pass it as a string argument to the function). Convert it to a number, then print "Adult" if age ≥ 18, else "Minor". You must ensure the conversion handles numeric strings correctly.
+
+// let age = prompt("ENter your age");
+// let promptAge = Number(age);
+
+// if (promptAge>=18){
+//    console.log("Adult")
+// }
+// else{
+//         console.log("Minor")
+// }
