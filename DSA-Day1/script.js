@@ -208,27 +208,27 @@
 // Using JavaScript’s destructuring assignment.
 
 //  1
-// let a=10;
-// let b=5;
-// let c;
-// c=a;
-// a=b;
-// b=c;
-// console.log(a,b);
+let a=10;
+let b=5;
+let c;
+c=a;
+a=b;
+b=c;
+console.log(a,b);
 
 // 2
-// let a=5;
-// let b=10;
-// [a,b]=[b,a];
-// console.log(a,b)
+let d=5;
+let e=10;
+[d,e]=[e,d];
+console.log(d,e)
 
 //3
-// let a=10;
-// let b=20;
-// a= a+b // 30;
-// b=a-b;
-// a=a-b;
-// console.log(a,b)
+let f=10;
+let g=20;
+f= f+g // 30;
+g=f-g;
+f=fig;
+console.log(f,g)
 
 //                           5.
 //  Integer Division and Remainder
@@ -310,3 +310,10 @@
 // else{
 //         console.log("Minor")
 // }
+
+
+// let a = 1; 
+
+// a = a++ + ++a * --a - a--; 
+
+// console.log(a);
