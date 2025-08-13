@@ -227,7 +227,7 @@ let f=10;
 let g=20;
 f= f+g // 30;
 g=f-g;
-f=fig;
+f=f-g;
 console.log(f,g)
 
 //                           5.
