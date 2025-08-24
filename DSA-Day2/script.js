@@ -1,6 +1,6 @@
 // console.log(Math.ceil(4.5));
 // console.log(Math.floor(4.5));
-// console.log(Math.round(4.4));
+console.log(Math.round(4.4));
 // console.log(Math.abs(-4)); // 4
 // console.log(Math.trunc(-6.8)); // remove the deciaml part
 // console.log(Math.min(-6.8,4,8));

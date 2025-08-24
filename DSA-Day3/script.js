@@ -43,20 +43,41 @@
 
 // 10 calculate the electricity bill per unit 
 // to calculate each aprt differently piecewise /slab patern
-let units = Number(prompt("Enter the number of units"));
-let bill =0;
-if(units>=0 && units<=100){
-    console.log(units*4.2)
-} else if(units>=101 && units<=200)
-{
-    console.log((100*4.2) + (units-100)*6)
-}else if(units>=201 && units<=400)
-{
-    console.log((100*4.2) + (100*6) + (units-200)*8)
-}else if(units>400)
-{
-    console.log((100*4.2) + (100*6) + (100*8) + (units-400)*13)
-}else{
-    console.log("Invalid inputs")
-}
+// let units = Number(prompt("Enter the number of units"));
+// let bill =0;
+// if(units>=0 && units<=100){
+//     console.log(units*4.2)
+// } else if(units>=101 && units<=200)
+// {
+//     console.log((100*4.2) + (units-100)*6)
+// }else if(units>=201 && units<=400)
+// {
+//     console.log((100*4.2) + (100*6) + (units-200)*8)
+// }else if(units>400)
+// {
+//     console.log((100*4.2) + (100*6) + (100*8) + (units-400)*13)
+// }else{
+//     console.log("Invalid inputs")
+// }
 
+
+                //   for loop
+
+// initialization or declaration ,condition , change(increment or decrement)
+// for (let i=1; i<=5; i++){
+//     console.log("Hello World");
+// }
+
+// for (let i=1; i<=5;){
+//     console.log("Hello World");
+// }
+
+// for (let i=1; ;){
+//     console.log("Hello World");
+// }
+
+// for (; ;){
+//     console.log("Hello World");
+// }
+
+// all of these conditions are true only that loop wants 2 semicolons inside of it otherwise its false
