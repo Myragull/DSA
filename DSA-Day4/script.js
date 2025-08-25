@@ -71,3 +71,53 @@
 //     fac = fac*i;
 // }
 // console.log(fac);
+
+                              // Question No 8:
+// Even and odd sum of a anumber in a given range
+// let n=10;
+// let evenSum = 0;
+// let oddSum = 0;
+// for(let i=1; i<=n; i++){
+//     if(i%2==0){
+//         evenSum=evenSum+i;
+//     }else{
+//         oddSum= oddSum+i;
+//     }
+// }
+// console.log("Even Sum",evenSum);
+// console.log("Odd Sum",oddSum);
+
+                // Question No 9:
+// Print all the factors of a number:
+// let n =12;
+// for(let i=1; i<=n; i++){
+//     if(n%i==0){
+//          console.log(i);
+//     }
+// }
+
+
+
+// code optimizations:
+// let n =19;
+// for(let i=1; i<=n/2; i++){
+//     if(n%i==0){
+//         console.log(i);
+//     }
+// }
+
+
+// Question No 10:
+// check a number is prime or not:
+let n=7;
+let count =0;
+for(let i=1; i<=n; i++){
+    if(n%i==0){
+        count++;
+    }
+}
+if(count==2){
+    console.log("Prime")
+}else{
+    console.log("Not Prime")
+}
